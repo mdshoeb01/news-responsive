@@ -1,0 +1,103 @@
+.head img{
+  width:120px;
+  height:120px;
+  left:5px;
+  right:20px;
+   padding-top:70px;
+  padding-right:20px;
+
+  /* align:left; */
+ }
+.head {
+  text-align:left;
+
+  bottom:30px;
+  position: relative;
+  left:20px;
+  font-size:65px;
+/*   font-family: */
+  /* padding-left:5px; */
+}
+.main{
+  margin:10px;
+
+  border:1px solid black;
+  padding: 4em;
+}
+.head span{
+  position:absolute;
+  padding-top:110px;
+}
+.main-hr{
+  /*box-shadow:0 10px 10px rgba(43,43,43,0.5) 0 6px 6px rgba(43,43,43,0.5);*/
+}
+.tabs{
+/*   border-radius:10px; */
+/*   margin-left:30%; */
+  padding-left:160px;
+  padding-bottom:40px;
+  padding-top:40px;
+/*   padding-right: px; */
+  text-transform: uppercase;
+/*   position: absolute;
+  display: inline-block; */
+  font-size:20px;
+}
+#dog-image {
+  border: 1px solid black;
+/*   padding-left:5px; */
+}
+#dog-image div{
+  padding-left:15px;
+}
+#dog-image img {
+  width:100%;
+
+}
+#dog-image div h2{
+  font-size:30px;
+  color:gray;
+}
+#dog-image div p{
+  font-size:17px;
+  color:gray;
+}
+.news-head{
+  position: relative;
+  font-size:30px;
+}
+.news-head p{
+  padding-left:15px;
+  
+}
+.news-head p span{
+  position: absolute;
+  right:10px;
+}
+.news-item:before{
+  content:'\00BB';
+
+}
+.news-breaker{
+  margin-left:15px; 
+  margin-right:15px;
+}
+.news-item{
+  font-size:20px;
+}
+.score-card thead th{
+/*! position: absolute; */
+  /*! padding-left:70px; */
+  padding-right:13em;
+  font-size:20px;
+  font-weight:normal;
+  opacity:0.5;
+}
+.score-card tbody tr td span{
+  font-weight: bold;
+}
+.score-card tbody {
+  padding-left:10px;
+  font-size:24px;
+/*   right:40px; */
+}
