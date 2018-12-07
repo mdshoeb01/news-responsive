@@ -1,170 +1,178 @@
 
 .main{
-  margin: 2px;
-  border:1px solid black;
-  /* display:flex; */
+  margin: 1em;
   padding:5%;
 }
 header{
   display: flex;
-
-  /*! border-bottom:1px solid black; */
-  /* border-width: 100%; */
+  flex-direction:row;
+  justify-content: start;
   padding-bottom: 2em;
-  box-shadow: 0 3px rgba(43,43,43,0.3);
+  box-shadow: 0px 2px 0px rgba(128,128,128,0.5);
+}
+header img{
+  object-fit:contain;
 }
 .main header h1{
-  align-self:center;
-  margin-left:0.7em;
-  font-size:3em;
+  margin-left:1em;
+  font-size:4em;
   font-weight: normal;
 }
 
-.nav-bar-img{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  
-}
-
-nav{
-/*   margin:1em;
-  padding-bottom:10px;
-  display: flex;
-  justify-content: space-around;
-  text-transform: uppercase; */
-  padding-top:4em;
-}
-nav a{
-  font-weight:550;
-  text-decoration: none;
-  color:gray;
-  font-size:20px;
-}
 .nav-bar nav{
-/*   padding-bottom:30px;
-  padding-top: 28px; */
-/*   margin:1em; */
-/*   padding-bottom:10px; */
+
   display: flex;
   justify-content: space-around;
   text-transform: uppercase;
-  position: absolute;
   width:100%;
   top:0;
-  background-color:white;
   padding-bottom:4em;
-  border:2px solid white;
+  padding-top:3em;
+}
+nav a{
+  text-decoration: none;
+  color:gray;
+  font-size:1.5em;
 }
 .image-containter{
+  display: flex;
+  border:1px solid gray;
   position: relative;
+  flex-direction:column;
+  justify-content: end;
+/*   flex-direction: column; */
 }
-/* .cover-top{
-  width:100%;
-  position: absolute;
-  background-color: white;
-  height: 3px;
-  top: 0px;
-}*/
 .dog-image{
   position:relative;
   width:100%;
-  height:100%;
-}
-.image-containter{
-  /* display: flex; */
-  border:1px solid gray;
-  position: relative;
-
-
+  height:31em;
+  object-fit: cover;
 }
 .image-text{
-  padding-left:1.5em;
-  color:gray;
-position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
   bottom:0;
   background: white;
   color: gray;
-  width:100%;
-  height: 35%;
   font-size:1.3em;
+}
+.image-text h2{
+  padding-left:0.7em;
+
+}
+.image-text p{
+  padding-left:1em;
+  padding-right:1em;
+}
+.news-section{
+  padding:1em;
 }
 .news-head{
   display: flex;
   justify-content: space-between;
-  font-size:20px;
+  font-size:1.4em;
+  box-shadow: 0px 2px 0px rgba(128,128,128,0.5);
+
+}
+.news-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.news-body p{
+  padding-bottom:1.2em;
+  padding-top:0.6em;
+  box-shadow: 0px 2px 0px rgba(128,128,128,0.5);
 }
 .news-list:before{
   content:'\00BB';
 }
-.score-card{
-  /* display: flex; */
-
-}
 .score-head{
   display: flex;
   justify-content: space-around;
+  color:gray;
 }
 .score-body{
   display: flex;
+  flex-direction: column;
+}
+.score-item{
+  display: flex;
   justify-content: space-around;
-  font-size:30px;
+  font-size:20px;
 }
 .score-body p span {
   font-weight: bold;
 
 }
-.second{
-  margin: 2px;
-  border:1px solid black;
-  /* display:flex; */
-  padding:5%;
+.weather{
+  margin-top:10em;
+}
+.city p{
+  font-size:1.5em;
 }
 .cur-temp{
   display: flex;
-  flex-direction: row;
+  flex-direction: start;
 }
 .weather-days{
   display: flex;
-/*   flex-direction: row; */
   justify-content: space-around;
+  margin-bottom: 1.2em;
 }
 
-
-.weather-images{
+.weather-days div{
   display: flex;
-  justify-content: space-around;
-  /*! width:72em; */
-  /*! height:28em; */
+  flex-direction: column;
+  
 }
 
-.weather-images img {
-  width:41em;
-  height: 14em;
+.weather-days div p{
+  align-self:center;
 }
-
-.weather-temp{
+.bottom-news-section{
   display: flex;
-/*   flex-direction: row; */
-  justify-content: space-around;
+  flex-direction: column;
 }
 
-.latest-news{
+.bottom-news-head{
   display: flex;
-  border-bottom:1px solid black;
   justify-content: space-between;
-}
-.news-links{
-  margin-top:3em;
-  margin-bottom:3em;
+  box-shadow: 0px 2px 0px rgba(148,148,148,0.7);
 }
 
-.news-element{
+.bottom-news-head p{
+  font-size:1.2em;
+}
+.bottom-news-body{
+  margin-bottom:3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-news-element{
   display: flex;
   margin-top:3em;
+  text-align: left;
+  flex-direction: row;
 }
-.desc-news{
+.bottom-news-element div img{
+  width: 12em;
+  margin-right: 1.3em;
+  margin-bottom: 1em;
+/*   object-fit: contain' */
+}
 
+.bottom-news-element div p{
+  margin-top:0;
+  font-size:1.1em;
+  float: left;
+}
+.bottom-news-element div h3{
+  margin-top:0;
 }
 footer{
   display: flex;
